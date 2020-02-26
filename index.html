@@ -45,7 +45,21 @@
 				<h2>D. Estes McKnight</h2>
 				<h3>Software Engineer and Math/ECE Enthusiast</h2>
 			</section>
-		</div>		
+		</div>
+
+		<div style = "text-align: center;">
+			<form onsubmit="changeNumberOfSides()" action="javascript:void(0);" id = "numSidesForm">
+			Number of sides (3 or greater): 
+				<input type="number" onchange="changeNumberOfSides()" name="numsides" id = "numSidesEntry"min="3" required>
+			</form>
+			
+			<canvas id="glCanvas" width="640" height="480"></canvas>
+		</div>
+		  
+		<script type="text/javascript" src="https://mdn.github.io/webgl-examples/tutorial/gl-matrix.js"></script>
+		<script type="text/javascript" src="http://104.198.151.122/js/geometry.js"></script>
+		<script type="text/javascript" src="http://104.198.151.122/js/init_shaders.js"></script>
+		<script type="text/javascript" src="http://104.198.151.122/js/hello_world.js"></script>
 	</body>
 
 </html>
