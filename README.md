@@ -1,2 +1,1 @@
-Source code for my webpage, which is located at
-# dem1995.github.io
+First attempt at creating a personal webpage. WIP.
