@@ -31,11 +31,11 @@
 	</head>
 
 	<nav class="topnav">
-		<a class="active" href="index.html">Home</a>
+		<a href="index.html">Home</a>
 		<a>About Me</a>
 		<a href = "resume.html">CV/Resumé</a>
 		<a>Past Projects</a>
-		<a href = "webdemos.html">Web Demos</a>
+		<a class = "active" href = "webdemos.html">Web Demos</a>
 	</nav>
 
 	<body>
@@ -43,11 +43,24 @@
 
 		<div class = "container">
 			<section class = "header">
-				<h2>D. Estes McKnight</h2>
-				<h3>Software Engineer and Math/ECE Enthusiast</h2>
+				<h2>Rotating Polygons</h2>
+				<h3>Created with OpenGL</h2>
 			</section>
 		</div>
 
+		<div style = "text-align: center;">
+			<form onsubmit="changeNumberOfSides()" action="javascript:void(0);" id = "numSidesForm">
+			Number of sides (3 or greater): 
+				<input type="number" onchange="changeNumberOfSides()" name="numsides" id = "numSidesEntry" min="3" placeholder="3" required>
+			</form>
+			
+			<canvas id="glCanvas" width="640" height="480"></canvas>
+		</div>
+		  
+		<script type="text/javascript" src="js/gl-matrix.js"></script>
+		<script type="text/javascript" src="js/geometry.js"></script>
+		<script type="text/javascript" src="js/init_shaders.js"></script>
+		<script type="text/javascript" src="js/shape_rotation.js"></script>
 	</body>
 
 </html>
