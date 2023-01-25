@@ -15,7 +15,7 @@ const fragment_shader_source = `
         }
 `;
 
-var numsidesglobal = 3;
+var numsidesglobal = 0;
 var polygonToDraw = createPolygon(0, 0, numsidesglobal, 1);
 
 main();
