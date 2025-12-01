@@ -165,6 +165,19 @@
 		    return false;
 		});
 
+		$('.hero-cta a[data-nav-section]').click(function(event){
+			var section = $(this).data('nav-section');
+
+				if ( $('[data-section="' + section + '"]').length ) {
+			    	$('html, body').animate({
+			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+			    	}, 500);
+			   }
+
+		    event.preventDefault();
+		    return false;
+		});
+
 
 	};
 

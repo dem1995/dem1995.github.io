@@ -332,6 +332,19 @@ figure {
           padding: 10px 15px !important;
           border: none;
           font-weight: 400; }
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner .hero-cta {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 24px;
+          row-gap: 20px;
+          flex-wrap: wrap;
+          margin: 10px auto 0;
+          width: 100%;
+          max-width: 440px; }
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner .hero-cta .btn {
+          min-width: 160px;
+          text-align: center; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: #000;
             border: 1px solid #000;
@@ -341,7 +354,9 @@ figure {
               border: 1px solid #000 !important; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
-              width: 100%; } }
+              width: 100%; }
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner .hero-cta .btn {
+              width: auto; } }
 
 body.offcanvas {
   overflow-x: hidden; }
